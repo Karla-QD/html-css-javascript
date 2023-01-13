@@ -1,0 +1,36 @@
+/*Modo oficial de css */
+
+h2{
+  color: blue;
+  text-align: center;
+  background-color: rgb(255, 255, 255); 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+  color:rgb(67, 49, 145);
+  text-align: center;
+  background-color: rgb(255, 255, 255); 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+  color:black;
+  text-align: center;
+  background-color: rgb(255, 255, 255); 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Selecector de clase*/
+
+.col{ 
+  color : blueviolet;
+
+}
+/*ul{
+  color:blueviolet;
+}
+
+ol{
+  color:blueviolet;
+}*/
