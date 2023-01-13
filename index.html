@@ -2,12 +2,38 @@
 
 <html lang="es"> 
   <head >
+    <!--Modo dos de usar css-->
+    <!--<style>
+      h2{
+        color: blue;
+        text-align: center;
+        background-color: rgb(255, 255, 255); 
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3{
+        color:rgb(67, 49, 145);
+        text-align: center;
+        background-color: rgb(255, 255, 255); 
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      p{
+        color:black;
+        text-align: left;
+        background-color: rgb(255, 255, 255); 
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+    </style>-->
     <!--titulo de la pagina-->
     <title>Pandas Tiernos</title>
+    <link rel ="stylesheet" href ="style.css" > <!--vinculamos el html con el archivo css-->
   </head>
+
   <body>
     <hr></hr>
-    <h2>&#128060;<em>Aplicacion de pandas</em> </h2> <!-- TODO: agregar enlace de imagenes de pandas -->
+    <h2 style ="color: rgb(67, 49, 145)" >&#128060;<em> Aplicacion de pandas</em> </h2> <!-- TODO: agregar enlace de imagenes de pandas -->
     <hr></hr>
     <main>
       <a href="#parrafo-1"> <em>¿Que son los pandas? </em></a> 
@@ -40,7 +66,7 @@
       <h3><em>Datos curiosos de los Pandas </em></h3>
       <div>
         <p>Cosas que <strong>aman</strong> los pandas: </p>
-          <ul>
+          <ul class = "col">
             <li>El bambú</li>
             <li>El agua</li>
             <li>Jugar</li>
@@ -51,7 +77,7 @@
           <img src = "https://senderosquebifurcan.files.wordpress.com/2012/10/tomando-agua.jpg" width ="200" height ="200" >
 
         <p>Cosas que <strong>odian</strong> los pandas: </p>
-          <ol>
+          <ol class = "col">
             <li>El calor</li>
             <li>La miel</li>
             <li>La <strong>deforestación</strong> de su hábitat</li>
@@ -63,7 +89,7 @@
     <h3> <em>¿Qué podemos hacer para ayudar a los pandas? </em></h3>
     <p>Para ayudar a los pandas podemos hacer lo siguiente:</p>
     <!--Listas sin ordenar-->
-    <ul>
+    <ul class = "col">
       <li>Evitar la tala de árboles</li>
       <li>No contaminar el aire</li>
       <li>No contaminar el agua</li>
