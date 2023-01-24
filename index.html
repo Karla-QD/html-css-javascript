@@ -2,6 +2,9 @@
 
 <html lang="es"> 
   <head >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
     <!--Modo dos de usar css-->
     <!--<style>
       h2{
@@ -29,12 +32,20 @@
     <!--titulo de la pagina-->
     <title>Pandas Tiernos</title>
     <link rel ="stylesheet" href ="style.css" > <!--vinculamos el html con el archivo css-->
+    
+  
   </head>
 
   <body>
     <hr></hr>
-    <h2 style ="color: rgb(67, 49, 145)" >&#128060;<em> Aplicacion de pandas</em> </h2> <!-- TODO: agregar enlace de imagenes de pandas -->
+    <h2 style ="color: rgb(67, 49, 145)" id="titulo">&#128060;<em> Aplicacion de pandas</em> </h2> <!-- TODO: agregar enlace de imagenes de pandas -->
     <hr></hr>
+    <!--<div id="contenedor">
+      <div class ="rectangulo px">200px de Ancho</div>
+      <div class ="rectangulo vw">20vw de Ancho</div>
+      <div class ="rectangulo em">15em de Ancho</div>
+    </div>-->
+    
     <main>
       <a href="#parrafo-1"> <em>¿Que son los pandas? </em></a> 
       <br>
@@ -66,7 +77,7 @@
       <h3><em>Datos curiosos de los Pandas </em></h3>
       <div>
         <p>Cosas que <strong>aman</strong> los pandas: </p>
-          <ul class = "col">
+          <ul id ="lis-aman">
             <li>El bambú</li>
             <li>El agua</li>
             <li>Jugar</li>
@@ -77,7 +88,7 @@
           <img src = "https://senderosquebifurcan.files.wordpress.com/2012/10/tomando-agua.jpg" width ="200" height ="200" >
 
         <p>Cosas que <strong>odian</strong> los pandas: </p>
-          <ol class = "col">
+          <ol id ="lis-odian">
             <li>El calor</li>
             <li>La miel</li>
             <li>La <strong>deforestación</strong> de su hábitat</li>
@@ -89,7 +100,7 @@
     <h3> <em>¿Qué podemos hacer para ayudar a los pandas? </em></h3>
     <p>Para ayudar a los pandas podemos hacer lo siguiente:</p>
     <!--Listas sin ordenar-->
-    <ul class = "col">
+    <ul id = ls>
       <li>Evitar la tala de árboles</li>
       <li>No contaminar el aire</li>
       <li>No contaminar el agua</li>
@@ -97,6 +108,7 @@
     </ul>
   <h4> <em>¿Considera importante cuidar esta especie en peligro de extinción? </em></h4>
  <!--Campos de texto placeholder-->
+ 
 <form action="/enviar-respuesta">
     <input type="text" placeholder = "Sí o no" required> <!--required, mostrar[a un mensaje en caso de enviar una respuesta vacía-->
     <button type="submit">Enviar</button>

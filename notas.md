@@ -3,7 +3,7 @@ Es estándar llamarle "index" al archivo de encabezado de la página web.
 
 `DOCTYPE` : informa al navegador que version de html o xml se uso para escribir el documento.
 
-### Etiquetas y Elementos
+#### Etiquetas y Elementos
 
 `Elemento:` Componente basico de html.
 
@@ -106,7 +106,7 @@ Podemos indicarle al usuario que tipo de respuesta se espera, para eso utilizamo
 
 ### Campo Obligatorio:
 
-Agregamos un atributo llamado "required", debe estar en la etiqueta input.
+Agregamos un atributo llamado "required", debe .estar en la etiqueta input.
 
 ### Botónes de Radio:
 
@@ -146,7 +146,7 @@ Se coloca luego del main, ya que no es parte del contenido principal. La etiquet
 
 SEO: search engine optimization.
 
-## CSS
+### CSS
 
 `C:` cascading
 `S:` style
@@ -214,8 +214,99 @@ h3{
 
 Se utiliza la propiedad `font-size` y adémas se asigna el tamaño indicando el tamaño deseado `15px`.
 
+### Familias Tipográficas
 
+Para cambiar el tipo de letra de alguna familia de etiqueta. Se utiliza `font-family: tipo`. Si el nombre de la fuente lleva espacio se pine entre comillas dobles, adémas luego del tipo de fuente se pone `, sans serif`.
 
+`link para fuentes personalizadas: https://fonts.google.com/specimen/Moon+Dance`.
 
+Nota: dar click derecho a la fuente, se copia el link, se pega el head y se copia el estilo en el css.
 
+### Cambiar tamaño y estilos de imagen con css:
 
+Se utiliza el elemento width, dentro de un bloque llamado `img` se define el ancho que queremos. 
+
+Para agregar estilos de bordes se utiliza `border-style: solid(normal recto),dotted(punteado), dashed(- - -), double (borde doble), groove(tipo marco), ridge(cresta),outsed`.
+
+Si queremos combinar los tipos de bordes, asignamos el primer valor para el borde de arriba y abajo y el segundo valor para ambos costados. Y asi sucesivamente.
+
+Para agregar color a los bordes de la imagen utilizar: `border-color`.
+
+#### Color de fondo de un <div> 
+
+Actua como contenedor de cualquier tipo de elemento, se le puede poner un atributo class al div, para definir su estilo en el css haciendo referencia a la clase.
+
+#### Atributo Id en CSS
+
+Le asignamos un id a la etiqueta y podemos referirnos a ella en el css con "#nombre-id".
+
+#### Padding
+
+Distancia entre el borde de un elemento html y su contenido. Se puede definir padding left, top, right etc.
+
+### Margen
+
+Distancia entre un elemento y el borde de otros elementos.
+
+### Selectores de atributos
+
+Los elementos pueden tener atributos que proporcionan un nivel de detalle mayor sobre el elemento que delimitan. Los selectores de atributos ayudan a seleccionar elementos definidos con unos atributos determinados.
+
+Ejemplo de como cambiar el estilo de las imagenes que tengan un atributo indicado:
+
+``` css
+img [alt]{
+  border-radius: 50%;
+}
+
+input [type= "radio"]{
+
+}
+```
+
+### Unidades absolutas y relativas
+
+Unidades: px= pixeles (absoluta), vw y em (relativas).
+
+Em: tamaño de la letra del elemento padre, en propiedades como: font-size, y tamaño de la fuente del propio elemento en el caso de otras propiedades como width.
+
+Vm: 1% del ancho ventana gráfica.
+Vh: 1% del alto de la ventana gráfica.
+
+Nota: `Para subrayar ponemos el color del texto + wavy underline`.
+
+### Prioridad de los estilos en linea
+
+Agregamos el estilo y ademas : `!important` y eso le dará prioridad a ese estilo.
+
+### Colores con hexadecimal
+
+Agregamos `#` y luego podemos hacer combinaciones con números en base 16, del 0-F(0.1.2.3.4.5.6.7.8.9.A.B.C.D.E.F). Se puede abreviar la cantidad de digitos cuando se repiten dos veces en cada par de los 6 digitos, dejando 1 por cada par. 
+
+Nota: escalas de colores en `Colour picker`.
+
+###  Valores RGB para colores
+
+Es un formato con valores entre 0-255, se coloca: `rgb(#,#,#)` siendo # el numero entre los valores válidos que deseemos. Si agregamos una `a` luego del rgb y un parametro más, le definiremos la transparencia del color.Ejemplo : `rgba(#,#,#,#)`.
+
+### Variables en css
+
+Cuando agregamos `--` antes del nombre estamos creando una variable. Una variables es el nombre asignado a un valor.
+Asi podemos usar el nombre de la variable para referirse al valor.
+
+Para referirnos a la variable ponemos : `var(nombre de la variable)`.
+
+Existen los valores de respaldo tales como agregar una coma y el color de respaldo luego del nombre de la variable. Ejemplo: `background: var(--nombre,black)`.
+
+### Compatibilidad de navegadores con variables css
+
+Basta con agregar antes de la asignacion de colores con las variables, el background de respaldo de manera anticipada, asi tendremos un respaldo en caso que el navegador no sea compatible con las variables.
+
+Ejemplo:
+
+```css
+background: black;
+background: var(--pinguino-piel,black).
+```
+
+Curso javascript: https://youtu.be/ivdTnPl1ND0
